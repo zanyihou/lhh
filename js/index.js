@@ -150,7 +150,7 @@ function game_state(){
 					winFunc(true);
 					//$(".resultTit").addClass("rlose");//输
 					//$(".resultTit").addClass("rpeace");//没有下注
-					$(".compare").addClass("db animated fadeInDown");	
+					$(".compare").addClass("animated zoomInDown db");	
 				}
 				
 				if(lotterytime == 0){

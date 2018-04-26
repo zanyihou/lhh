@@ -479,6 +479,14 @@ a.moreBtn {
 	width: 300px;
 	margin-top: -200px;
 	margin-left: -150px;
+	perspective: 101px;
+	-webkit-perspective: 101px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	transform: translateZ(2px);
+	-webkit-transform: translateZ(2px);
 }
 
 .compare span {
