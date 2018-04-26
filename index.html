@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>龙虎斗</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/game.css" />
+	<link rel="stylesheet" href="css/shop_goods.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+
+<!--页面顶部菜单-->
+<div class="header_top">
+	<div class="header_top_in">
+		<div class="note_out">
+			<div class="notes">
+			<span class="note"></span>
+			</div>
+			<img class="note_img" src="./img/note.png" width="100%">
+		</div>
+		<a class="bgBtn"></a>
+		<span class="left" id="recharge">我的金币：<i class="qb_up"></i><span class="qb_out"><b class="qb_num">0</b></span><img class="rcg_lg" src="./img/rcg_lg.png"></span>
+	</div>
+</div>
+
+<!--右上角菜单-->
+<div class="note_in22" style="display: none;">
+	<span class="record"></span>
+	<span class="game_rule"></span>
+	<a href="../home.html"><span class="game_back"></span></a>
+	<img class="note_in" src="./img/note_in.png" width="100%">
+</div>
+
+<!--历史路单-->
+ 
+<!--投注区域-->
+<div class="content">
+	<div class="chipCnt">
+		<div class="lhh area0 long" data-attr="0"><img src="img/long.png" width="100%"><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></div>
+		<div class="lhh area1 he" data-attr="1"><img src="img/he.png" width="100%"><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></div>
+		<div class="lhh area2 hu" data-attr="2"><img src="img/hu.png" width="100%"><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></div>
+		<div class="pt">
+			<a class="lhh area3" data-attr="3"><img src="img/n1.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area4" data-attr="4"><img src="img/n2.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area5" data-attr="5"><img src="img/n3.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area6" data-attr="6"><img src="img/n4.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area7" data-attr="7"><img src="img/n5.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area8" data-attr="8"><img src="img/n6.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area9" data-attr="9"><img src="img/n7.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area10" data-attr="10"><img src="img/n8.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area11" data-attr="11"><img src="img/n9.png"><div class="ptxt">x2</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area12" data-attr="12"><img src="img/n0_1.png"><div class="ptxt">x8</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area13" data-attr="13"><img src="img/n0_2.png"><div class="ptxt">x8</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area14" data-attr="14"><img src="img/n0_3.png"><div class="ptxt">x8</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area15" data-attr="15"><img src="img/n0_4.png"><div class="ptxt">x8</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+			<a class="lhh area16" data-attr="16"><img src="img/n0_0.png"><div class="ptxt">x20</div><span></span><i class="chipInfo"><i class="selfChip"></i>/<i class="totalChip"></i></i></a>
+		</div>
+	</div>
+</div>
+
+<!--历史记录-->
+<div class="hisBox">
+	<a class="cloHis"></a>
+	<div class="hisBoxCnt">
+		<ul>
+			<li><span class="hisQH">第2981期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2982期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/hu2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n2.png">
+					<img src="img/n8.png">
+					<img src="img/n5.png">
+					<img src="img/n0_3.png">
+					<img src="img/n7.png">
+				</span>
+				<span class="hisLLH"><img src="img/hu2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n5.png">
+					<img src="img/n9.png">
+					<img src="img/n0_4.png">
+					<img src="img/n4.png">
+					<img src="img/n6.png">
+				</span>
+				<span class="hisLLH"><img src="img/hu2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n0_1.png">
+					<img src="img/n9.png">
+					<img src="img/n7.png">
+					<img src="img/n2.png">
+					<img src="img/n6.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n9.png">
+					<img src="img/n8.png">
+					<img src="img/n0_3.png">
+					<img src="img/n7.png">
+					<img src="img/n2.png">
+				</span>
+				<span class="hisLLH"><img src="img/hu2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n0_0.png">
+					<img src="img/n0_1.png">
+					<img src="img/n2.png">
+					<img src="img/n6.png">
+					<img src="img/n7.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/hu2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+			<li><span class="hisQH">第2983期</span>
+				<span class="hisTP">
+					<img src="img/n1.png">
+					<img src="img/n2.png">
+					<img src="img/n3.png">
+					<img src="img/n4.png">
+					<img src="img/n0_0.png">
+				</span>
+				<span class="hisLLH"><img src="img/long2.png"></span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--开牌区域-->
+<div class="table">
+	<div class="timebox">
+		<span class="qhts">第1208期</span>
+		<span class="timets">投注时间:</span>
+		<a class="timer">12</a>
+	</div>
+	<div class="mahjong">
+		<a class="animated"><img class="ob" src="img/back.png"><img class="of" src="img/n2.png"><span class="dot dot2"></span></a>
+		<a class="animated"><img class="ob" src="img/back.png"><img class="of" src="img/n8.png"><span class="dot dot8"></a>
+		<a class="animated"><img class="ob" src="img/back.png"><img class="of" src="img/n5.png"><span class="dot dot5"></a>
+		<a class="animated"><img class="ob" src="img/back.png"><img class="of" src="img/n9.png"><span class="dot dot9"></a>
+		<a class="animated"><img class="ob" src="img/back.png"><img class="of" src="img/n0_0.png"><span class="dot dot0"></a>
+	</div>
+	<div class="preHis db">
+		<span class="qhts">上期开奖</span><img src="img/n9.png"><img src="img/n3.png"><img src="img/n2.png"><img src="img/n4.png"><img src="img/n6.png">
+	</div>
+ 
+	<div class="mahis">
+		<div class="hisIcon"><a class="licon">龙</a><a class="heicon">和</a><a class="licon">龙</a><a class="licon">龙</a><a class="hicon">虎</a>
+			<a class="licon">龙</a><a class="heicon">和</a><a class="licon">龙</a><a class="licon">龙</a><a class="hicon">虎</a>
+			<a class="licon">龙</a><a class="hicon">虎</a>
+		</div>
+		<p><span class="lnum">龙：4</span><span class="hnum">虎：4</span><span class="henum">和：1</span></p>
+		<a class="moreBtn"><div><img src="img/wayBtn.png" width="22px"></div><div>路纸</div></a>
+	</div>
+	
+	
+	<!--当前在线用户显示区域-->
+	<div class="user-wrap">
+		<li class="user-li"><img src="img/player1.jpg" width="80%"><span>玩家1</span></li>
+		<li class="user-li"><img src="./img/player2.jpg" width="80%"><span>玩家2</span></li>
+		<li class="self"><img src="./img/player3.jpg" width="80%"><span>自己</span></li>
+		<li class="user-li"><img src="./img/player4.jpg" width="80%"><span>玩家4</span></li>
+		<li class="user-li"><img src="./img/avatar.png" width="80%"><span>玩家5</span></li>
+	</div>
+</div>
+<!--当前开奖结果显示区域-->
+<div class="hidebg"></div>
+<div class="compare">
+	<div class="resultTit"></div>
+	<div class="com1"><img src="img/n2.png"><span class="big">大于</span><img src="img/n0_0.png"><span class="equal">=</span><img src="img/long2.png"></div>
+	<div class="com2"><span>开奖区域：</span><img src="img/long2.png"><img src="img/n2.png"><img src="img/n8.png"><img src="img/n5.png"><img src="img/n9.png"><img src="img/n0_0.png"></div>
+	<div class="com2"><span>本次投注：</span><img src="img/long2.png"><img src="img/n0_0.png"><img src="img/n1.png"><img src="img/n7.png"><img src="img/n8.png"><img src="img/n5.png"></div>
+	<div class="com2"><span>中奖情况：</span><img src="img/long2.png"><img src="img/n8.png"><img src="img/n5.png"><img src="img/n0_0.png"></div>
+	<div class="com2 mon"><span style="opacity: 0;">对应奖金：</span><b>+2000</b><b>+1000</b><b>+1000</b><b>+500</b></div>
+	
+	<div class="com2 comr"><span>奖金： <i>4500元</i></span></div>
+</div>
+
+<!--底部筹码区域-->
+<div class="footer">
+	<div class="footer_in">
+		<img class="line_up" src="./img/line.png" width="100%">
+		<img class="line_down" src="./img/line.png" width="100%">
+		<ul class="bottom">
+			<li><div class="bottom_in"><img class="current" src="./img/1_1.png" width="100%"><span class="meng" data-num="1_1" data-value="2"></span></div></li>
+			<li><div class="bottom_in"><img src="./img/2_1.png" width="100%" class=""><span class="meng" data-num="2_1" data-value="10"></span></div></li>
+			<li><div class="bottom_in"><img src="./img/3_1.png" width="100%" class=""><span class="meng" data-num="3_1" data-value="50"></span></div></li>
+			<li><div class="bottom_in"><img src="./img/4_1.png" width="100%" class=""><span class="meng" data-num="4_1" data-value="100"></span></div></li>
+			<li><div class="bottom_in"><img src="./img/5_1.png" width="100%" class=""><span class="meng" data-num="5_1" data-value="500"></span></div></li>
+		</ul>
+		<img class="right clear_con" src="./img/clear.png" width="25%">
+	</div>
+</div>
+
+<!--投注记录-->
+<div class="record_content">
+	<div class="record_content_out">
+		<div class="record_content_in">
+			<h1>投注记录</h1>
+			<ul class="record_ul">
+				<li id="tpl_user_records">
+					<div class="record_con">
+						<span class="record_l"><b class="record_num">0813期</b><br><i class="record_day">01-22&nbsp;</i></span>
+						<img class="more-logo" src="./img/i4.png">
+						<span class="record_r"><b class="record_result">未中奖</b><br><i class="record_qb">投注1520金币</i></span>
+					</div>
+					<div class="record_more2">
+						<p><span class="record_win">投注详情：</span><span class="record_wresult">龙(1000), 一同(500), 發财(20)</span></p>
+						<p><span class="record_win">开奖详情：</span><span class="record_win2"><img src="img/long2.png"><img src="img/n2.png"><img src="img/n8.png"><img src="img/n5.png"><img src="img/n9.png"><img src="img/n0_0.png"></span></p>
+					</div>
+				</li>
+				<li id="tpl_user_records">
+					<div class="record_con">
+						<span class="record_l"><b class="record_num">0813期</b><br><i class="record_day">01-22&nbsp;</i></span>
+						<img class="more-logo" src="./img/i4.png">
+						<span class="record_r"><b class="record_result">中奖1000元</b><br><i class="record_qb">投注2000金币</i></span>
+					</div>
+					<div class="record_more2">
+						<p><span class="record_win">投注详情：</span><span class="record_wresult">龙(1000), 一同(500), 發财(20)</span></p>
+						<p><span class="record_win">开奖详情：</span><span class="record_win2"><img src="img/long2.png"><img src="img/n2.png"><img src="img/n8.png"><img src="img/n5.png"><img src="img/n9.png"><img src="img/n0_0.png"></span></p>
+					</div>
+				</li>
+				<li class="load_more_tz"><a id="btn_user_records_more" href="javascript:;" class="load_more load_more1">&lt;&lt;加载更多&gt;&gt;</a></li>
+			</ul>
+			<img class="pop_close" src="./img/close.png">
+		</div>
+		<div style="text-align:center; padding:8% 0; width:100%; max-width:640px;">
+			<span class="btn_return"> 回到游戏</span>
+		</div>
+	</div>
+</div>
+
+<!--游戏规则-->
+<div class="rule">
+	<div class="rule_out">
+		<div class="rule_in">
+			<div class="rule_content">
+				<h1>龙虎斗详细规则</h1>
+				<h2>一、游戏玩法说明</h2>
+				<ul>
+					<li>1.龙虎斗为鸿途网自主开发的一款休闲麻将游戏。</li>
+					<li>2.每局游戏的下注时间为20秒，玩家在投注时间内首先选择自己要投注的筹码，然后点
+					击要投注的区域进行投注，在投注时间外，不可进行投注。</li>
+					<li>3.筹码上的面值即为彩金，例如：1筹码=1彩金，在一局游戏中，玩家可选择不同的筹码进行下注，当玩家的金币不足时，无法投注，请补充金币，每个区域的最高投注为5000金币。</li>
+					<li>4.投注的区域内写明了该投注的名称和赔率，当玩家投注了一个区域后，该区域下方显示玩家在该区域的金币总数。在一局游戏中，玩家可对每个投注区域进行反复投注。</li>
+					<li>5.在屏幕的右下角有撤销投注的按钮，在投注时间内点击，可将玩家当前所有投注全部撤销，撤销后玩家可再进行投注。投注时间内外则不可撤销。</li>
+					<li>6.下注时间结束后，进入开牌时间，在此期间内玩家等待开奖，不可投注也不可撤销投注。</li>
+					<li>7.开牌结束后，进入派奖时间，照开奖结果，返还中奖者的投注筹码和相应的奖励筹码</li>
+					<li>8.开奖时间结束后，一局游戏结束，进入空闲时间，此段时间玩家不可进行投注操作，可以利用空闲时间查看走势。空闲时间结束，至此，进入下一局游戏。</li>
+					<li>9.页面中上区域显示最近10期的开奖结果</li>
+					<li>10.如需查看历史投注记录，可在右上角相应图标处操作。</li>
+				</ul>
+				<h2>二、投注区域及赔率说明</h2>
+				<ul>
+					<li>1.游戏中， 一同~九同分别对应点数1~9. 東风，西风，南风，北风，發财对应点数0点。</li>
+					<li>2.龙：开奖的五张牌中，第一张牌的点数大于第五张牌的点数即为龙，赔率1赔2。</li>
+					<li>3.虎：开奖的五张牌中，第一张牌的点数小于第五张牌的点数即为虎，赔率1赔2。</li>
+					<li>4.和：开奖的五张牌中，第一张牌的点数等于第五张牌的点数即为和，赔率1赔8。</li>
+					<li>5.一同~九同： 只要开奖的五张牌中，出现了这张牌，即中奖，赔率1赔2，重复出现算一次</li>
+					<li>6.東风，南风，西风，北风：只要开奖的五张牌中，出现了其中这张牌，即中奖，赔率1赔8，重复出现算一次</li>
+					<li>7.發财：只要开奖的五张牌中，出现了这张牌，即中奖，赔率1赔20，重复出现算一次</li>
+					<li>7.赔率解释：1赔2，即玩家投入1，若中奖，除返还已投入的1外，再赔给玩家1，例如用户投注100金币，赔率1赔2，若中奖，用户将获得200金币回报，以此类推。</li>
+					<li>8.用户不得以任何软件或其他作弊行为参与本游戏，一经发现，不予派奖；对已发奖的，有权有求用户返还。</li>
+					<li><span class="rule_tb">8.如因突然停电，网络延迟、网络拥堵、系统故障等意外因素或其他不可抗力，导致你未能成功参与游戏或是服务器发生中断，我们将金币退换你的账户，我方对此不承担任何责任。</span></li>
+				</ul>
+				<h2>三、联系客服</h2>
+				<ul>
+					<li>1.如在游戏过程中遇到任何问题，请联系客服。客服QQ：<span class="rule_tb">10039383</span> 。</li>
+				</ul>
+				<img class="pop_close" src="./img/close.png">
+			</div>
+		</div>
+		<div style="text-align:center; padding:8% 0; width:92%; max-width:588.8px; margin:0 auto;">
+			<span class="btn_return btn_return2"> 回到游戏</span>
+		</div>
+	</div>
+</div>
+ 
+<!--开奖弹窗-->
+<div class="reward">
+	<a class="r1"></a>
+	<a class="r2"></a>
+	<a class="r3"></a>
+	<a class="r4"></a>
+	<a class="r5"></a>
+	<a class="r6"></a>
+	<a class="r7"></a>
+	<a class="r8"></a>
+	<a class="rt"></a>
+</div>
+
+<!--充值-->
+<div class="recharge_wrap charge_wrap">
+	<div class="page" style="/* display: none; */">
+		<div class="page_in"></div>
+		<div class="page-content">
+			<div class="con-title">
+				<img class="title-img" src="img/bg-dialog-ylc-hd__red.png"><p>
+					<b>·</b>
+					<b class="wrap_title">金币充值</b>
+					<b>·</b>
+				</p>
+				<a class="charge_wrap_close">
+					<img src="img/close(1).png" width="60%">
+				</a></div><div class="recharge-content-out">
+					<div class="recharge-content">
+						<div class="con-first">今日首充送10%</div>
+						<ul class="con-ul">
+							<li>
+								<img class="f-l con-ul-logo" src="img/qb_30.png" alt="">
+								<div class="con-ul-mid f-l">
+									<div class="con-ul-money" style="margin-top: 0.5rem;">
+										<b class="wrap_qb">50</b>金币</div>
+								</div>
+								<button class="con-ul-btn f-r">获取</button>
+							</li>
+							<li>
+								<img class="f-l con-ul-logo" src="img/qb_100.png" alt="">
+								<div class="con-ul-mid f-l">
+									<div class="con-ul-money" style="margin-top: 0.5rem;">
+										<b class="wrap_qb">100</b>金币</div>
+								</div>
+								<button class="con-ul-btn f-r">获取</button>
+							</li>
+							<li>
+								<img class="f-l con-ul-logo" src="img/qb_500.png" alt="">
+								<div class="con-ul-mid f-l">
+									<div class="con-ul-money" style="margin-top: 0.5rem;">
+										<b class="wrap_qb">500</b>金币</div>
+								</div>
+								<button class="con-ul-btn f-r">获取</button>
+							</li>
+							<li>
+								<img class="f-l con-ul-logo" src="img/qb_1000.png" alt="">
+								<div class="con-ul-mid f-l">
+									<div class="con-ul-money" style="margin-top: 0.5rem;">
+										<b class="wrap_qb">1000</b>金币</div>
+								</div>
+								<button class="con-ul-btn f-r">获取</button>
+							</li>
+							<li>
+								<img class="f-l con-ul-logo" src="img/qb_5000.png" alt="">
+								<div class="con-ul-mid f-l">
+									<div class="con-ul-money" style="margin-top: 0.5rem;">
+										<b class="wrap_qb">5000</b>金币</div>
+								</div>
+								<button class="con-ul-btn f-r">获取</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!--游戏引导1-->
+<div class="guide guide_one" style="display:none;">
+	<img class="first_01" src="./img/first_01.png" width="60%">
+	<div class="guide_wenzi">
+		<h1>欢迎来到龙虎斗</h1>
+		<p><span class="step_one">步骤一</span>选择您心仪的筹码</p>
+	</div>
+	<span class="next_step">下一步</span>
+</div>
+<!--游戏引导2-->
+<div class="guide guide_two" style="display:none;">
+	<img class="first_01" src="./img/first_02.png" width="60%">
+	<div class="guide_wenzi">	
+		<h1>欢迎来到龙虎斗</h1>
+		<p><span class="step_one">步骤二</span>选择投注区域完成下注</p>
+	</div>
+	<span class="return_step">开始游戏</span>
+</div>
+
+<!--投注撤销的确认弹窗-->
+<div class="revokets">
+	<h1>是否撤销本次投注？</h1>
+	<h2><a href="#" class="cancelBtn">取消</a><a href="#" class="sureBtn">确认</a></h2>
+</div>
+ 	
+<!--背景音乐-->
+<audio controls="controls" id="mbg" style="display: none">
+    <source src="./source/bg.wav" type="audio/ogg" />
+</audio>
+<!--开始音乐-->
+<audio controls="controls" id="mbegin" style="display: none">
+    <source src="./source/begin.mp3" type="audio/ogg" />
+</audio>
+<!--下注音乐-->
+<audio controls="controls" id="mcoin" style="display: none">
+    <source src="./source/coin.mp3" type="audio/ogg" />
+</audio>
+<!--赢钱音乐-->
+<audio controls="controls" id="mwin" style="display: none">
+    <source src="./source/win.wav" type="audio/ogg" />
+</audio>
+
+<!--手机的快速点击事件-->
+<script type="application/javascript">
+	$(function() {
+		FastClick.attach(document.body);
+	});
+</script>
