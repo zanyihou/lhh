@@ -338,11 +338,11 @@ i.chipInfo {
 	position: absolute;
 	display: none;
 	left: 0;
-	top: 0;
+	top: -1px;
 	transform-origin: center center;
 	-webkit-transform-origin: center center;
-	transform: translateZ(0px) rotateY(180deg);
-	-webkit-transform: translateZ(0px) rotateY(180deg);
+	transform: translateZ(-1px) rotateY(180deg);
+	-webkit-transform: translateZ(-1px) rotateY(180deg);
 }
 
 .mahjong a.cho {
